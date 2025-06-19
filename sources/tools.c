@@ -663,7 +663,7 @@ int LocateFile(UBYTE **name, int type)
 STREAM *CloseStream(STREAM *stream)
 {
 	int newstr = stream->previous, sgn;
-	UBYTE *t, numbuf[24];
+	UBYTE *t, numbuf[32];
 	LONG x;
 	if ( stream->FoldName ) {
 		M_free(stream->FoldName,"stream->FoldName");
@@ -1782,7 +1782,7 @@ int StrLen(UBYTE *s)
 
 void NumToStr(UBYTE *s, LONG x)
 {
-	UBYTE *t, str[24];
+	UBYTE *t, str[32];
 	ULONG xx;
 	t = str;
 	if ( x < 0 ) { *s++ = '-'; xx = -x; }

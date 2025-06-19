@@ -1342,7 +1342,7 @@ ECINFOSTRUCT inf;
 	return( openExternalChannel(NULL,0,(UBYTE *)&inf,NULL) );
 }/*openPresetExternalChannel*/
 
-#define PIDTXTSIZE 23
+#define PIDTXTSIZE 32
 #define BOTHPIDSIZE 45
 
 #ifndef LONG_MAX
